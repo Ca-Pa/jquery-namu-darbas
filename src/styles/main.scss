@@ -1,0 +1,66 @@
+@import 'variables.scss';
+main {
+    height: auto;
+    background-color: $background-color;
+    .container {
+        .flex {
+            &>div {
+                height: 390px;
+                width: 390px;
+                position: relative;
+                overflow: hidden;
+                background-image: url('img/portfolio-7-sm.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &:hover {
+                    div {
+                        visibility: visible;
+                        transition: 300ms;
+                    }
+                }
+                div {
+                    position: absolute;
+                    inset: 0;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    transition: 300ms;
+                    visibility: hidden;
+                }
+            }
+            .img-two {
+                background-image: url('img/portfolio-4-sm.jpg');
+            }
+            .img-three {
+                background-image: url('img/portfolio-5-sm.jpg');
+            }
+            .img-four {
+                background-image: url('img/portfolio-9-sm.jpg');
+            }
+            .img-five {
+                background-image: url('img/portfolio-3-sm.jpg');
+            }
+            .img-six {
+                background-image: url('img/portfolio-8-sm.jpg');
+            }
+            .img-seven {
+                background-image: url('img/portfolio-2-sm.jpg');
+            }
+            .img-eight {
+                background-image: url('img/portfolio-6-sm.jpg');
+            }
+            .img-nine {
+                background-image: url('img/portfolio-12-sm.jpg');
+            }
+        }
+    }
+    #more-info {
+        background-color: $background-color-white;
+        .container {
+            padding-top: 40px;
+            margin-top: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            height: 100px;
+        }
+    }
+}
