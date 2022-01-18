@@ -44,7 +44,8 @@ nav {
 }
 
 .active {
-    visibility: visible;
+    transform: rotate(180deg);
+    opacity: 60%;
 }
 
 .not-active {

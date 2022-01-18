@@ -82,15 +82,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script>
         $(function() {
-            $('div i').on('click', function() {
+            $('.navigation div i').on('click', function() {
                 $('#navbar').css('transform', 'scaleY(1)');
-                $('.navigation div i').addClass('not-active');
+                $('.navigation div i').addClass('active');
 
             });
 
-            $('.not-active').on('click', function() {
+            $('#navbar').on('mouseleave', function() {
                 $('#navbar').css('transform', 'scaleY(0)');
-                $('.navigation div i').addClass('not-active');
+                $('.navigation div i').removeClass('active');
 
             });
 

@@ -1,13 +1,13 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="index.css"><title>Document</title></head><body><header><nav><div class="container"><div class="flex justify-between align-center logo"><div><img src="img\logo.png" alt=""></div><div><i class="fa-solid fa-bars"></i></div></div></div><div class="navigation"><div class="container"><div class="flex justify-center"><div #id="button"><i class="fa-solid fa-caret-down"></i></div></div><div id="navbar"><ul><li><a>All</a></li><li><a>Branding</a></li><li><a>Print</a></li><li><a>Photography</a></li><li><a>Design</a></li><li><a>Mockup</a></li></ul></div></div></div></nav></header><main><div class="container"><div class="flex justify-between"><div class="img-one"><div><p></p></div></div><div class="img-two"><div></div></div><div class="img-three"><div><p></p></div></div></div><div class="flex justify-between"><div class="img-four"><div><p></p></div></div><div class="img-five"><div></div><h1>Minimal Mobile App</h1><p>Design</p></div><div class="img-six"><div><p></p></div></div></div><div class="flex justify-between"><div class="img-seven"><div><p></p></div></div><div class="img-eight"><div><p></p></div></div><div class="img-nine"><div><p></p></div></div></div></div><div id="more-info"><div class="container">Load more work</div></div></main><script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script><script>$(function() {
-            $('div i').on('click', function() {
+            $('.navigation div i').on('click', function() {
                 $('#navbar').css('transform', 'scaleY(1)');
-                $('.navigation div i').addClass('not-active');
+                $('.navigation div i').addClass('active');
 
             });
 
-            $('.not-active').on('click', function() {
+            $('#navbar').on('mouseleave', function() {
                 $('#navbar').css('transform', 'scaleY(0)');
-                $('.navigation div i').addClass('not-active');
+                $('.navigation div i').removeClass('active');
 
             });
 
